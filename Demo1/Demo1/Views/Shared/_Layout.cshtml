@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> @ViewBag.Title - Demo 14 </title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel='stylesheet' id='fortune-fonts-css' href='http://fonts.googleapis.com/css?family=Poppins%3A600%7CSource+Sans+Pro%3A400%2C600%2C700&amp;ver=4.8.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='fortune-google-fonts-additional-css' href='http://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700%2C700i%7CPoppins%3A400%2C600&amp;ver=4.8.9' type='text/css' media='all' />
+    <link rel='stylesheet' id='redux-google-fonts-fortune_options-css' href='http://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CPoppins%3A300%2C400%2C500%2C600%2C700&amp;ver=1503313179' type='text/css' media='all' />
+    <script type='text/javascript' src='http://maps.google.com/maps/api/js?ver=4.8.9'></script>
+    @Scripts.Render("~/bundles/wp-include-up")
+    @Styles.Render("~/Content/css")
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/demo.agnidesigns.com\/fortune\/demo14\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.9" } };
+        !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 56826, 8203, 55356, 56819), 0, 0), c = j.toDataURL(), b !== c && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55358, 56794, 8205, 9794, 65039), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55358, 56794, 8203, 9794, 65039), 0, 0), e = j.toDataURL(), d !== e }return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script>
+        (function ($) {
+            jQuery(document).ready(function () {
+                /* your jquery here */
+            });
+        })(jQuery);</script>
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+<body class="home page-template-default page page-id-8 wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
+    <div id="page" class="hfeed site wrapper  ">
+        <div class="top-padding"></div>
+        <div class="bottom-padding"></div>
+        <div id="back-to-top" class="back-to-top"><a href="#back-to-top"><i class="ion-ios-arrow-up"></i></a></div>
+        <header id="masthead" class="site-header" role="banner">
+            <!-- Header -->
+            <div class="header-navigation-menu default-header-menu fullwidth-header-menu transparent-header-menu header-sticky header-additional-bg-color header-menu-border-additional reverse_skin clearfix" data-transparent="1" data-sticky="1" data-sticky-fancy="1">
+                <div class="header-navigation-menu-container default-header-menu-container ">
+                    <div class="header-menu-content">
+                        <div class="container-fluid">
+                            <div class="header-menu-flex right-menu-flex lmi">
+
+                                <div class="header-icon header-icon-additional-logo header-logo-additional-bg-color">
+                                    <a href="@Url.Action("Index","Home")" class="logo-icon logo-additional">
+                                         <img src="../../Content/wp-content/uploads/sites/15/2017/03/fortune-logo.png" alt="Demo 14"></a>
+                                    <a href="@Url.Action("Index","Home")" class="logo-icon logo-main">
+                                         <img src="../../Content/wp-content/uploads/sites/15/2017/03/fortune-logo_white.png" alt="Demo 14">
+                                    </a>
+                                </div>
+                                <div class="header-menu clearfix">
+                                    <nav class="nav-menu nav-menu-additional-color page-scroll">
+                                        <ul id="navigation" class="nav-menu-content">
+                                            <li id="menu-item-210" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-210"><a href="@Url.Action("Index","Home")">Home</a></li>
+                                            <li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="@Url.Action("Company","Home")">Company</a></li>
+                                            <li id="menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="@Url.Action("Index","Studies")">Case studies</a></li>
+                                            <li id="menu-item-432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-432">
+                                                <a href="#">Services</a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215"><a href="@Url.Action("Index","Services")">Services</a></li>
+                                                    <li id="menu-item-351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="@Url.Action("Service","Services")">Service single page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="header-menu-toggle-container">
+                                        <div class="tab-header-menu-toggle header-menu-toggle toggle-nav-menu toggle-nav-menu-additional ">
+                                            <div class="burg-icon"><a href="#"><div class="burg"></div></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-menu-icons-container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="tab-nav-menu tab-invisible page-scroll">
+                        <ul id="tab-navigation" class="tab-nav-menu-content container-fluid">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-210"><a href="index.html">Home</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="d14-company/index.html">Company</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="d14-case-studies/index.html">Case studies</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-432">
+                                <a href="#">Services</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215"><a href="d14-services/index.html">Services</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="service-single-page/index.html">Service single page</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><a href="d14-contact-us/index.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header><!-- #masthead -->
+        <div class="spacer"></div>
+
+        @RenderBody()
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="site-info">
+                <div id="footer-bar-area" class="footer-bar">
+                    <div class="container-fluid">
+
+                        <div class="footer-widget-row row">
+                            <aside id="text-2" class="col-xs-12 col-sm-4 col-md-3 col-lg-2_5 widget widget_text">
+                                <div class="widget-title">About Us</div>			<div class="textwidget">Proin metus libero, feugiat a nisi dapibus, mattis pharetra orci. Vivamus eu lacus venenatis tellus venenatis sagittis non sit amet felis. Nam in commodo purus.</div>
+                            </aside><aside id="nav_menu-2" class="col-xs-12 col-sm-4 col-md-3 col-lg-2_5 widget widget_nav_menu">
+                                <div class="widget-title">Quick Links</div><div class="menu-footer-bar-quick-links-container">
+                                    <ul id="menu-footer-bar-quick-links" class="menu">
+                                        <li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-472"><a href="#">About</a></li>
+                                        <li id="menu-item-473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-473"><a href="#">Career</a></li>
+                                        <li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-474"><a href="#">Press</a></li>
+                                        <li id="menu-item-475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-475"><a href="#">Terms &#038; Policies</a></li>
+                                    </ul>
+                                </div>
+                            </aside><aside id="fortune_latest_works-2" class="col-xs-12 col-sm-4 col-md-3 col-lg-2_5 widget widget_fortun_latest_works">
+                                <div class="widget-title">Latest Works</div>			<ul>
+
+
+                                    <li>
+                                        <div class="latest-works-thumbnail">
+                                            <img width="150" height="150" src="~/Content/wp-content/uploads/sites/15/2016/12/38e22b35914463.5708243961da1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/38e22b35914463.5708243961da1-150x150.jpg 150w, http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/38e22b35914463.5708243961da1-300x300.jpg 300w, http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/38e22b35914463.5708243961da1-768x768.jpg 768w, http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/38e22b35914463.5708243961da1.jpg 960w" sizes="(max-width: 150px) 100vw, 150px" />
+                                        </div>
+                                        <div class="latest-works-details">
+                                            <h6 class="latest-works-title"><a href="portfolio/fullwidth-grid-gallery/index.html" rel="bookmark">Fullwidth grid gallery</a></h6>                        <ul class="portfolio-category list-inline">
+                                                <li>Logo Design</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="latest-works-thumbnail">
+                                            <img width="150" height="150" src="~/Content/wp-content/uploads/sites/15/2016/12/portfolio-thumbnail_24-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/portfolio-thumbnail_24-150x150.jpg 150w, http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/portfolio-thumbnail_24-300x300.jpg 300w, http://demo.agnidesigns.com/fortune/demo14/wp-content/uploads/sites/15/2016/12/portfolio-thumbnail_24.jpg 640w" sizes="(max-width: 150px) 100vw, 150px" />
+                                        </div>
+                                        <div class="latest-works-details">
+                                            <h6 class="latest-works-title"><a href="portfolio/fullwidth-carousel-vc-elements/index.html" rel="bookmark">Fullwidth carousel &amp; VC elements</a></h6>                        <ul class="portfolio-category list-inline">
+                                                <li>Graphic</li>
+                                                <li>Logo Design</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+
+                            </aside><aside id="fortune_instagram_feed-2" class="col-xs-12 col-sm-4 col-md-3 col-lg-2_5 widget widget_fortun_instagram_feed">Instagram has returned invalid data.<div class="clearfix"></div><a class="follow-link" href="http://instagram.com/thirumani02" target="_self">Follow Us</a></aside><aside id="fortune_social_icons-2" class="col-xs-12 col-sm-4 col-md-3 col-lg-2_5 widget widget_fortun_social_icons">
+                                <div class="widget-title">Social Icons</div>
+                                <ul class="list-inline">
+                                    <li><a href="http://facebook.com/profile" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="http://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer-colophon" class="footer-colophon">
+                    <div class="container">
+                        <div class="footer-content style-1">
+                            <div class="footer-text-container">
+                                <div class="footer-text">Copyright © 2017 Fortun All Rights Reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- .site-footer -->
+    </div><!-- #page -->
+    <div id="preloader-1" class="preloader preloader-style-1" data-preloader="1" data-preloader-style="1" data-close-button="true" data-close-button-text="Proceed!">
+    </div><!-- #preloader -->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69084012-5', 'auto', { 'allowLinker': true });
+        ga('require', ['linker', 'displayfeatures']);
+        ga('linker:autoLink', ['agnisites.com/fortune/']);
+        ga('send', 'pageview');
+
+    </script>
+
+    @Scripts.Render("~/bundles/wp-includes")
+    @Scripts.Render("~/bundles/wp-content")
+    @RenderSection("ChangeHeader", false)
+
+    <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css' href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.8.9' type='text/css' media='all' />
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpcf7 = { "loaderUrl": "http:\/\/demo.agnidesigns.com\/fortune\/demo14\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+/* ]]> */
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Fullscreen Slider";
+    ViewBag.NextPage = "SidebarGalleryFullwidth";
+    ViewBag.PrevPage = "ZigzagConstrained";
+}
+
+<div id="content" class="site-content content default-header-menu-content">
+
+    <div id="primary" class="portfolio-single-post content-area  has-fullwidth">
+        <main id="main" class="site-main portfolio-single-post-container container-fluid" role="main">
+
+
+            <article id="post-309" class="portfolio-single-content portfolio-single-layout-full post-309 portfolio type-portfolio status-publish has-post-thumbnail hentry types-branding types-logo-design">
+                <div class="portfolio-single-container">
+                    <div class="portfolio-single-row row portfolio-single-media-position-behind">
+                        <div class="portfolio-single-media col-xs-12 col-sm-12 col-md-12">
+                            <div class="portfolio-single-media-container">
+                                <div class="portfolio-full-media"><div class="agni-gallery bg-carousel "><div class="agni-gallery-row row carousel-gallery " data-gallery-margin=0 data-gallery-autoplay=true data-gallery-autoplay-timeout=5000 data-gallery-autoplay-hover=false data-gallery-loop=true data-gallery-autoheight=false data-gallery-center=false data-gallery-pagination=true data-gallery-0="1" data-gallery-768="1" data-gallery-992="1" data-gallery-1200="1" style="height:100vh"><div class="animate custom-gallery-item agni-gallery-column" style="animation-duration: 0.8s; 	animation-delay: 0.4s; -webkit-animation-duration: 0.8s; -webkit-animation-delay: 0.4s" data-animation="fadeInUp" data-animation-offset="95%"><figure class="agni-gallery-figure"><div class="agni-gallery-figure-bg" style="background-image:url(../../Content/wp-content/uploads/sites/2/2016/12/b6386038765209.5851caca2b477.jpg);"></div><figcaption></figcaption></figure></div><div class="animate custom-gallery-item agni-gallery-column" style="animation-duration: 0.8s; 	animation-delay: 0.8s; -webkit-animation-duration: 0.8s; -webkit-animation-delay: 0.8s" data-animation="fadeInUp" data-animation-offset="95%"><figure class="agni-gallery-figure"><div class="agni-gallery-figure-bg" style="background-image:url(../../Content/wp-content/uploads/sites/2/2016/12/3c845038765209.5851caca2d5be.jpg);"></div><figcaption></figcaption></figure></div><div class="animate custom-gallery-item agni-gallery-column" style="animation-duration: 0.8s; 	animation-delay: 1.2s; -webkit-animation-duration: 0.8s; -webkit-animation-delay: 1.2s" data-animation="fadeInUp" data-animation-offset="95%"><figure class="agni-gallery-figure"><div class="agni-gallery-figure-bg" style="background-image:url(../../Content/wp-content/uploads/sites/2/2016/12/d7135738765209.5851caca2c254.jpg);"></div><figcaption></figcaption></figure></div><div class="animate custom-gallery-item agni-gallery-column" style="animation-duration: 0.8s; 	animation-delay: 1.6s; -webkit-animation-duration: 0.8s; -webkit-animation-delay: 1.6s" data-animation="fadeInUp" data-animation-offset="95%"><figure class="agni-gallery-figure"><div class="agni-gallery-figure-bg" style="background-image:url(../../Content/wp-content/uploads/sites/2/2016/12/90f64738765209.5851caca2ae0a.jpg);"></div><figcaption></figcaption></figure></div></div></div></div>
+                            </div>
+                        </div>
+                        <span class="portfolio-single-project-details-toggle">Details</span>			    <div class="portfolio-single-content col-xs-12 col-sm-12 col-md-12">
+                            <div class="portfolio-single-content-inner">
+                                <h1 class="portfolio-title text-left">Fullscreen slider</h1>										        <div class="portfolio-entry-content">
+                                    <p>In fermentum in mauris id eleifend. Donec sed est varius, ornare arcu eu, interdum mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum velit neque, quis vehicula sapien pulvinar sed. Nulla fringilla augue aliquet auctor vulputate. Proin vel risus elit. Nullam facilisis id tortor sit amet hendrerit.</p>
+                                </div>  <!-- .entry-content -->
+                                <div class="portfolio-project-details text-left">
+                                    <div class="portfolio-project-details-container">
+                                        <div class="portfolio-project-details-inner">
+                                            <div class="project-additional-details"><span>Client : Donald Black</span><span>Date : 19 Dec 2016</span></div>			        <div class="portfolio-sharing-buttons">
+                                                <span class="portfolio-sharing-icon"><i class="pe-7s-share"></i></span>
+                                                <ul class="portfolio-sharing-list">
+                                                    <li><a href="http://www.facebook.com/sharer.php?u=http://demo.agnidesigns.com/fortune/demo1/portfolio/fullscreen-slider//&amp;t=Fullscreen%20slider"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="https://twitter.com/intent/tweet?text=Fullscreen%20slider-http://demo.agnidesigns.com/fortune/demo1/portfolio/fullscreen-slider/"><i class="fa fa-twitter"></i></a></li>
+
+                                                    <li><a href="https://plus.google.com/share?url=http://demo.agnidesigns.com/fortune/demo1/portfolio/fullscreen-slider/"><i class="fa fa-google-plus"></i></a></li>
+
+                                                    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://demo.agnidesigns.com/fortune/demo1/portfolio/fullscreen-slider/&amp;title=Fullscreen%20slider"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    @Html.Partial("PortfolioNavigator")
+
+                </div>
+            </article>
+
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+
+
+</div><!-- #content -->
+
+@section ChangeHeader{
+    <script>
+        $(function () {
+            var header = $(".header-navigation-menu");
+            header.removeAttr("data-transparent").removeClass("transparent-header-menu").removeClass("reverse_skin");
+            $(window).scroll(function () {
+                header.removeAttr("data-transparent").removeClass("transparent-header-menu").removeClass("reverse_skin");
+            })
+        });
+
+        $("footer").empty();
+    </script>
+}

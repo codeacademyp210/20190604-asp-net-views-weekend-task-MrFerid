@@ -1,0 +1,24 @@
+﻿<div class="portfolio-navigation-container">
+    <nav class="portfolio-navigation navigation" role="navigation">
+        <h1 class="screen-reader-text">Portfolio navigation</h1>
+        <div id="portfolio-nav-links" class="nav-links">
+            <div class="nav-previous">
+                @if (ViewBag.PrevPage != null)
+                {
+                    <a href="@Url.Action(ViewBag.PrevPage, "Section")" rel="prev"><i class="pe-7s-angle-left"></i><span>Previous</span></a>
+                }
+            </div>
+            <div class="nav-back">
+                <a href="#"><i class="pe-7s-back"></i></a>
+            </div>
+            <div class="nav-next">
+                @if (ViewBag.NextPage != null)
+                {
+                    <a href="@Url.Action(ViewBag.NextPage, "Section")" rel="next"><span>Next</span><i class="pe-7s-angle-right"></i></a>
+                }
+            </div>
+        </div>
+    </nav><!-- .nav-links -->
+</div>
+
+
